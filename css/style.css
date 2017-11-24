@@ -1,4 +1,49 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 16px;
+}
+
+.container {
+  /*background-color: #a5a5a5;*/
+  width: 420px;
+  margin: auto;
+}
+
+/* Modern Luxury Travel*/
+
+h1 {
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 13%;
+  padding-bottom: 17%;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin-bottom: -9.5%;
+  padding-left: 6%;
+}
+
+img {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 575px) {
+  div {
+  margin: 2%;
+  width: 50%;
+  }
+  img {
+  display: inline-block;
+  vertical-align: top;
+  }
 }
