@@ -9,7 +9,7 @@ body {
 
 .container {
   /*background-color: #a5a5a5;*/
-  width: 420px;
+  width: 90%;
   margin: auto;
 }
 
@@ -19,15 +19,19 @@ h1 {
   font-family: sans-serif;
   letter-spacing: 2px;
   text-align: center;
-  padding-top: 13%;
-  padding-bottom: 17%;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 h2 {
   font-size: 1.2em;
   letter-spacing: 1px;
-  margin-bottom: -9.5%;
-  padding-left: 6%;
+  margin-bottom: -11%;
+  margin-left: 7%;
+}
+
+div {
+  /*margin: auto;*/
 }
 
 img {
@@ -37,13 +41,41 @@ img {
   z-index: -1;
 }
 
+
 @media screen and (min-width: 575px) {
+
   div {
-  margin: 2%;
-  width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+
   }
+
   img {
-  display: inline-block;
-  vertical-align: top;
+    overflow: hidden;
   }
+
+
+  h2 {
+    /*margin-bottom: -14%;*/
+  }
+
+}
+
+@media screen and (min-width: 1199px) {
+
+  div {
+    width: 20%;
+    margin: 3% 2.3% 0 2.3%;
+  }
+
+  img {
+    width: 240px;
+    height: 170px;
+  }
+
+  h2 {
+    margin-bottom: -12%;
+  }
+
 }
