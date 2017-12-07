@@ -8,9 +8,8 @@ body {
 }
 
 .container {
-  /*background-color: #a5a5a5;*/
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* Modern Luxury Travel*/
@@ -20,62 +19,78 @@ h1 {
   letter-spacing: 2px;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
+
+/* Images and Text */
 
 h2 {
   font-size: 1.2em;
   letter-spacing: 1px;
-  margin-bottom: -11%;
+  margin-bottom: -17%;
   margin-left: 7%;
 }
 
-div {
-  /*margin: auto;*/
-}
-
 img {
+  background-size: cover;
   position: relative;
   width: 100%;
-  margin-bottom: 40px;
+  height: auto;
+  margin: 7% auto;
   z-index: -1;
 }
 
+/* Min-width 575 Media Query*/
 
 @media screen and (min-width: 575px) {
 
-  div {
-    display: inline-block;
-    vertical-align: top;
-    width: 45%;
-
+  .preview {
+    float: left;
+    width: 46%;
+    margin: 2% 2%;
+    background-size: cover;
   }
 
-  img {
-    overflow: hidden;
+  .baku {
+    background-image: url("../images/baku.jpg")
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 165px;
   }
 
-
-  h2 {
-    /*margin-bottom: -14%;*/
+  .london {
+    background-image: url("../images/london.png")
+    background-size: cover;
+    background-position: center;
+    height: 165px;
   }
 
+  .madrid {
+    background-image: url("../images/madrid.jpg")
+    background-size: cover;
+    background-position: center;
+    /*min-height: 150px;*/*/
+    max-height: 250px;
+  }
+
+  .rome {
+    background-image: url("../images/rome.jpg")
+    background-size:cover;
+    background-position: center;
+    /*min-height: 150px;*/
+    max-height: 300px;
+  }
 }
 
 @media screen and (min-width: 1199px) {
 
-  div {
-    width: 20%;
-    margin: 3% 2.3% 0 2.3%;
-  }
-
-  img {
-    width: 240px;
-    height: 170px;
-  }
-
-  h2 {
-    margin-bottom: -12%;
+  .preview {
+    float: left;
+    width: 23%;
+    margin: 1% 1%;
+    background-size: cover;
+    height: 175px;
   }
 
 }
