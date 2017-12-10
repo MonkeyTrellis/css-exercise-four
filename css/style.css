@@ -27,8 +27,8 @@ h1 {
 h2 {
   font-size: 1.2em;
   letter-spacing: 1px;
-  padding-top: 5%;
-  padding-left: 5%;
+  padding-top: 1em;
+  padding-left: 1em;
 }
 
 .preview {
@@ -65,19 +65,18 @@ h2 {
     width: 48%;
     float: left;
     margin: 1% 1%;
-    height: 280px;
+    height: 165px;
   }
 }
 
 /* Min-width 1199 Media Query*/
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 900px) {
 
   .preview {
-    float: left;
     width: 23%;
+    float: left;
     margin: 1% 1%;
-    background-size: cover;
     height: 175px;
   }
 
